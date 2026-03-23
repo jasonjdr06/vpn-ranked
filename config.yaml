@@ -1,0 +1,48 @@
+baseURL: "https://vpnranked.co/"
+languageCode: "en-us"
+title: "VPN Ranked"
+theme: "PaperMod"
+paginate: 10
+
+params:
+  env: production
+  title: VPN Ranked
+  description: "Independent VPN reviews and comparisons. Find the best VPN for streaming, privacy, gaming, and travel."
+  keywords: [VPN reviews, best VPN, VPN comparison, online privacy, VPN 2026]
+  author: VPN Ranked Team
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowToc: true
+
+  homeInfoParams:
+    Title: "Find the best VPN — honest, independent reviews"
+    Content: "No paid placements. No bias. Just honest VPN comparisons tested for speed, privacy, and value."
+
+  socialIcons:
+    - name: "rss"
+      url: "/index.xml"
+
+menu:
+  main:
+    - identifier: reviews
+      name: Reviews
+      url: /categories/review/
+      weight: 10
+    - identifier: comparisons
+      name: Comparisons
+      url: /categories/comparison/
+      weight: 20
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
