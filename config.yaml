@@ -2,7 +2,8 @@ baseURL: "https://vpnranked.co/"
 languageCode: "en-us"
 title: "VPN Ranked"
 theme: "PaperMod"
-paginate: 10
+pagination:
+  pagerSize: 10
 
 params:
   env: production
